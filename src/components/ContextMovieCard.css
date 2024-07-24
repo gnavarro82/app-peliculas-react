@@ -1,0 +1,14 @@
+.container{
+    display: grid;/* estara en coolumnas */
+    grid-template-columns: repeat(auto-fill, 230px);/* estara en coolumnas y sera automatico */
+    gap: 40px;/* espacio entre columnas */
+    padding: 40px;
+    justify-content: center;
+ 
+}
+/* cuando se use en celular la sera el 100%*/
+@nedia (max-width:560px){
+ .container{
+    grid-template-columns:100%;
+ }   
+}
